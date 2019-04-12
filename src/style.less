@@ -1,0 +1,113 @@
+
+.ant-layout{  
+    width:100%;
+    height: 100%;
+}
+
+
+#app{
+    width:100%;
+    height: 100%;
+    position: relative;
+    .layout{
+        &-header{
+            background: #3d4751;
+            color: #bbc4cc;
+            padding:0 60px;
+            &-logo {
+                float: left;
+                margin-right: 30px;
+                img{
+                    margin-bottom: 5px;
+                }
+            }
+            &-nav{
+                float: left;
+                &-item{
+                    float: left;
+                    margin-right: 30px;
+                    padding:0 30px;
+                    cursor: pointer;
+                    font-size: 12px;
+                    .anticon {
+                        font-size: 22px;
+                        margin-right: 10px;
+                        margin-top: 20px;
+                        display: block;
+                        float: left;
+                    }
+                    span{
+                        display: block;
+                        float: left;
+                        position: relative;
+                    }
+                    
+                }
+                .action_item{
+                    span:after{
+                        content:'';
+                        width: 0; 
+                        height: 0;
+                        border-width: 6px;
+                        border-style: solid;
+                        border-color: transparent #fff transparent transparent;
+                        transform: rotate(90deg);
+                        position: absolute;
+                        bottom:0;
+                        left:30%;
+                    }
+                }
+            }
+        }
+        &-content{
+            background: #f8f8f8;
+        }
+    }
+    .silder{
+        position: absolute;
+        top:0;left:0;
+        width:40px;
+        height: 615px;
+        background: #fefeff;
+        padding-top:64px;
+        box-shadow: darkgrey  0px 0px 10px;
+        &-item{
+            padding:10px 0;
+            .anticon{
+                display: block;
+                margin: 0 auto;
+                font-size: 20px;
+            }
+            span{
+                display: block;
+                width:14px;
+                margin: 0 auto;
+                padding-top: 5px;
+            }
+        }
+        &-item:nth-child(2){
+            padding:25px 0;
+            span{
+                width:28px;
+            }
+        }
+        &-item:nth-child(3){
+            padding:25px 0;
+            span{
+                width:28px;
+            }
+        }
+        &-item:hover{
+            background: #ecfeff;
+            color: #3fc1af;
+            cursor: pointer;
+            
+        }
+    }
+}
+
+
+
+ html, body{
+   font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
+ }
