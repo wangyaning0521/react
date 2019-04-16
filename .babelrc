@@ -4,6 +4,7 @@
   ],
   "plugins": [
     "@babel/plugin-proposal-function-bind",
+    "react-hot-loader/babel",
     ["import", {
         "libraryName": "antd",
         "libraryDirectory": "es",
